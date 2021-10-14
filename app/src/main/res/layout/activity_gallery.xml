@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/myScreen"
+    tools:context=".Gallery">
+
+    <RelativeLayout
+        android:id="@+id/header_title_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BFFF"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgBtnMenu"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@mipmap/ic_menu"
+            ></ImageButton>
+
+        <TextView
+            android:id="@+id/txtGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="Gallery"
+            android:textSize="25sp"></TextView>
+
+        <ImageButton
+            android:id="@+id/imgBtnList"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="44dp"
+            android:src="@mipmap/ic_list"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/imgBtnSelect"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/ic_three_dot_vertical"></ImageButton>
+
+    </RelativeLayout>
+
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth" />
+
+</LinearLayout>
